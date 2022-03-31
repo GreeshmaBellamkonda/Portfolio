@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <link href="./css/style.css" rel="stylesheet">
+       <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+       <title>Greeshma's portfolio </title>
+       <link rel="stylesheet" href="./css/queries.css">
+       <style> 
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                font-family: "Permanent Marker", cursive;
+                scroll-behavior: smooth;
+                }
+
+                .section {
+                    height: 100vh;
+                }
+
+                /*
+
+                //////// HERO SECTION ////////
+
+                */
+
+                .hero_section {
+                    background-color: rgb(224, 216, 216);
+                    width:175vh;
+                    height:550px;
+                }
+
+                /*
+
+                //////// HEADER ////////
+
+                */
+
+                .hero-header {
+                    position: relative;
+                    width: auto;
+                }
+
+                .hero_intro {
+                    position: absolute;
+                }
+
+                .menu-bar {
+                    height: 80px;
+                }
+
+                .hero-name {
+                    font-family: "Dancing Script",cursive;
+                    font-size: 60px;
+                    position: absolute;
+                    top: 6px;
+                    left: 1%;
+                    color: rgb(214, 33, 9);
+                }
+
+                .menu-items {
+                    display: flex;
+                    float: right;
+                    margin-right: 26px;
+                    margin-top: 30px;
+                }
+
+                .menu-item {
+                    margin-right: 30px;
+                    line-height: 80px;
+                    list-style-type:none;
+                    font-size: 25px;
+                    margin: 0 10px;
+                }
+
+                .menu_list-items{
+                    font-family:'Roboto Condensed', sans-serif ;
+                    font-weight:600;
+                    text-decoration: none;
+                    color: rgb(16, 15, 17);
+                }
+
+                .hero_img_container {
+                    position: relative;
+                }
+
+                .hero_img {
+                    position: relative;
+                    height: 400px;
+                    width: 430px;
+                    right: 40px;
+                    top: 45px;
+                }
+                
+                .hero_img_border {
+                    position: absolute;
+                    border: 5px solid  rgb(13, 17, 1);
+                    right: 40px;
+                    top: 90px;
+                    height: 350px;
+                    width: 430px;
+                }
+
+                .hero_intro h1 {
+                    position: relative;
+                    font-family: "Dancing Script", cursive;
+                    color:rgb(10, 10, 10);
+                    letter-spacing: 4px;
+                    font-size: 30px;;
+                    top: 180px;
+                    margin-left: 25px;
+                }
+                
+                .intro_line3 span :nth-child() {
+                    display: block;
+                    width: 340px;
+                    margin-bottom: 10px;
+
+                }
+                
+                .intro_line2  span,
+                .intro_line3 span {
+                    color: teal;
+                    font-size: 40px;
+                    font-family: 'Dancing Script', cursive;
+                }
+
+                /*EducationSection */
+                #education{
+                    flex-direction: column;
+                    background-color:rgb(224, 216, 216) ;
+                    width: 175vh;
+                    height: 1100px;
+                    left: 6%;
+                }
+
+                #education h1{
+                    top: 75vh;
+                    font-size: 80px;
+                    font-family: "Dancing Script",cursive;
+                    left: 6%;
+                    color: rgb(197, 36, 7);
+                    
+                    
+
+                }
+                .columns{
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    padding-left: 78px;
+                }
+                .Box {
+                    height:310px;
+                    width: 900px;;
+                    background-color: rgb(250, 234, 224);
+                    border-radius:20px;
+                    margin: 20px;
+                    padding: 25px;   
+                }
+                .Box h2{
+                    color: teal;
+                    font-size: 2rem;
+                    margin-bottom: 50px;
+                    font-family: "Dancing Script", cursive;
+                    justify-content: center;
+                }
+                .Box p {
+                    color: black;
+                    font-size: 25px;
+                    font-family:"Dancing Script", cursive;
+                margin-left: 5px;
+                }
+
+                /* About Section */
+                #about{
+                    width:175vh;
+                    height: 520px;
+                    flex-direction: column;
+                    background-color: rgb(224, 216, 216);
+                }
+                #about h1{
+                    left: 6%;
+                    font-family: "Dancing Script", cursive;
+                    font-size: 75px;
+                    color: rgb(201, 36, 6);
+                }
+
+                .about{
+                    display: flex;
+                    padding-top: 10px;
+                }
+
+                .about img{
+                    width:500px;
+                    height:400px;
+                    padding: 0px 30px;
+                }
+                .name{
+                    padding: 10px;
+                }
+                .name h2{
+                    font-family:"Dancing Script" , cursive;
+                    color: teal;
+                    font-size: 65px;
+                }
+
+                .name p{
+                    font-size: 25px;
+                    font-family: "Dancing Script", cursive;
+                    color: black;
+                }
+
+                /*Contact Section */
+                #contact{
+                    width:175vh;
+                    height: 1000px;
+                    flex-direction: column;
+                    background-color: rgb(224, 216, 216)
+                }
+
+                #contact h1{
+                    left: 6%;
+                    font-family: "Dancing Script", cursive;
+                    font-size: 75px;
+                    color: firebrick;
+                    padding-top: 0px;
+                }
+
+                .form{
+                    display: flex;
+                    flex-direction:column;
+                    align-items:center;
+                    justify-content: center;
+                }
+
+                .input{
+                    padding:15px 20px;
+                    margin:15px;
+                    width:40%;
+                    border:none;
+                    outline:rgb(10, 10, 10);
+                    border-radius: 25px;
+                    font-family: "Dancing Script", cursive;
+                    font-size: 25px;
+                    outline-width: 22px;
+                }
+
+                #message{
+                    margin:15px;
+                    padding:10px;
+                    border-radius:20px;
+                    font-family: "Dancing Script", cursive;
+                    font-size: 20px;
+                    outline: black;
+                    outline-width: 22px;
+                }
+
+                #submit {
+                    padding:15px 20px;
+                    margin:30px;
+                    width:15%;
+                    border-radius: 20px;
+                    background-color: black;
+                    color:beige;
+                    border: none;
+                    outline: black;
+                    outline-width: 22px;
+                    font-family: "Dancing Script", cursive;
+                    font-size: 25px;
+                }
+
+                #submit:hover{
+                    background-color :teal;
+                    color:white;
+                    cursor: pointer;
+                }
+
+                /*
+
+
+                ///////////FOOTER SECTION////////////
+
+                */
+                .footer_container {
+                    background-color:rgb(224, 216, 216);
+                    margin-top: 0.5cm;
+                    width: 175vh;
+                    text-align: center;
+                    padding: 6rem 0 0;
+                }
+
+                .footer_container img {
+                    width: 1.5cm;
+                    height: 1.5cm;
+                    color: black;
+                    top:auto;
+                }
+
+                .copyright {
+                    margin: 10px auto;
+                    color: rgb(7, 8, 8);
+                    font-family: "Dancing Script", cursive;
+                    font-size:20px;
+                    width: 175vh;
+                    height: 20px;
+                    justify-content: center;
+                    
+                }
+
+                .designer_name {
+                    display: flex;
+                    justify-content: center;
+                    color:  teal;
+                    font-family: "Dancing Script", cursive;
+                    font-size: 20px;
+                }
+
+                .designer_name p{
+                    padding: 1 cm;
+                    font-family: "Dancing Script", cursive;
+                    font-size: 25px;
+                }
+       </style>
+    </head>
+    <body>
+        <section class="hero_section" id="sectionhero">
+            <header class="hero-header">
+                <h2 class="hero-name">
+                    Greeshma's portfolio
+                </h2> 
+                <div class="menu-bar">
+                    <ul class="menu-items">
+                        <li class="menu-item">
+                            <a href="#home" class="menu_list-items">HOME</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#education" class="menu_list-items" >EDUCATION</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#about" class="menu_list-items" >ABOUT ME</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#contact" class="menu_list-items" >CONTACT ME</a>
+                        </li>
+                    </ul>
+                </div>    
+            </header>
+
+            <div class="hero_section_content">
+                <div class="hero_img_container">
+                    <span class="hero_img_border"><img src="https://res.cloudinary.com/dteidzofd/image/upload/v1648650674/hero_xkoedo.jpg"  class="hero_img" alt="Author Image"></span>
+                </div>
+                <div class="hero_intro">
+                    <h1 class="intro_line1">
+                        Hi, I am
+                    </h1>
+                    <h1 class="intro_line2">
+                        <span>Greeshma Bellamkonda</span>
+                    </h1>
+                    <h1 class="intro_line3">
+                        And this is <span>my resume</span>
+                    </h1>
+                </div>
+            </div>    
+        </section> 
+        <section class="educztion_section" id="education">
+            <h1 class="heading">Education</h1>
+            <div class="Columns">
+            <div class="Box">
+                <h2>Masters of technology in Software engineering</h2>
+                <p>I am currently doing my integrated Mtech with the specilization in software engineering, in Vellore 
+                    institute of technology,Andhra Pradesh and I am in first year and first semester was already completed.
+            </div>
+            <div class="Box">
+                <h2>Intermediate</h2>
+                <p>I completed my intermediate course from Narayana junior college,Eluru.
+                    I chose M.P.C course to study in intermediate, I passed the intermediate exam with the percentage of 97.9.
+                    Also, I participated in many activities there and I am very confident to say that I was fully active student
+                     in my intermediate
+                </p>
+            </div>
+            <div class="Box">
+                <h2>Tenth standard</h2>
+                <p>I completed my Tenth standard from Vani High School,Veeravalli.I passes my tenth with a GPA of 10.0.
+                    In my school days,I participated in all activities.Also,I participated in spelling bee competition thrice 
+                    and i secured division third plavce in first attempt,district fifth place in second attempt and finally division 
+                    first place in third attempt.So,I think I took most of my school days to learn and being unique from others.
+                </p>
+            </div>
+        </section>
+
+        <section id="about">
+            <h1 class="heading"> About me</h1>
+            <div class="about">
+                 <img src="https://res.cloudinary.com/dteidzofd/image/upload/v1648650731/about_ck8oyw.jpg" alt="about me">
+                <div class="name">
+                <h2>I'm Greeshma</h2>
+                <p>Hi everyone.I am Greeshma.Currently,I am pursuing my integrated mtech with the specialization
+                    in software engineering in VIT-AP University.I live in a small village named Bandarugudem which
+                     is near to Vijayawada, Krishna district, India.I am an introvert and enthusiastic person.
+                     I always want to learn something new and I love reading books.I love learning new concepts 
+                     like coding as I doesnot know about coding unti I joined engineering.I always shows interest in 
+                     learning different topics about coding.I am very confident girl.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h1 class="heading">Contact Me</h1>
+            <form action="" class="form">
+                <input type="text" name="name" class="input" placeholder="Enter Your Name">
+                <input type="email" name="email" class="input" placeholder="Enter Your Email">
+                <textarea name="message" id="message" cols="70" rows="20" placeholder="Enter Your Message"></textarea>
+                <input type="submit" value="Submit" id="submit">
+            </form>
+        </section>
+
+        <footer class="footer">
+            <div class="footer_container">
+                <div class="footer-socials">
+                    <a href="#">
+                        <img src="./css/linkedin.png" alt="linkedin icon"> 
+                    </a>   
+                </div>
+                <div class="copyright">
+                    <p>&#169; COPYRIGHT 2022. ALL RIGHTS ARE RESERVED</p>
+                </div>
+                <div class="designer_name">
+                    <p>Designed by</p>
+                    <P> Greeshma</P>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
